@@ -7,6 +7,12 @@ This application supports the tutorials for both the [Cedar and Fir generations]
 - [Getting Started on Heroku with Java](https://devcenter.heroku.com/articles/getting-started-with-java)
 - [Getting Started on Heroku Fir with Java (Maven)](https://devcenter.heroku.com/articles/getting-started-with-java-maven-fir)
 
+If you're going to use a database, ensure you have a local `.env` file that reads something like this:
+
+```
+DATABASE_URL=postgres://localhost:5432/java_database_name
+```
+
 ## Deploying to Heroku
 
 Using resources for this example app counts towards your usage. [Delete your app](https://devcenter.heroku.com/articles/heroku-cli-commands#heroku-apps-destroy) and [database](https://devcenter.heroku.com/articles/heroku-postgresql#removing-the-add-on) as soon as you are done experimenting to control costs.
