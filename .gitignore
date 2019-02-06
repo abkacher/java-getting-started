@@ -36,3 +36,4 @@ build/
 .DS_Store
 docs/tmp/
 docs/java-getting-started/
+docs/deploying-spring-boot-apps/
