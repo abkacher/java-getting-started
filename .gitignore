@@ -2,8 +2,6 @@ target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
-.env
-.idea/
 
 ### STS ###
 .apt_generated
@@ -34,7 +32,3 @@ build/
 .vscode/
 
 .DS_Store
-docs/tmp/
-docs/java-getting-started/
-docs/deploying-spring-boot-apps/
-.mvn/wrapper/maven-wrapper.jar
