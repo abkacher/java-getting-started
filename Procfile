@@ -1,2 +1,3 @@
 web: java -jar target/java-getting-started-1.0.0-SNAPSHOT.jar
 worker: java -jar target/java-getting-started-1.0.0-SNAPSHOT.jar --worker
+release: echo release-phase-ok
