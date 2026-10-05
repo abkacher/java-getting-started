@@ -34,7 +34,7 @@ public class GettingStartedApplication {
                 .map(energy -> "E=mc^2: " + energy + " = " + energy.to(SI.KILOGRAM))
                 .orElse("ENERGY environment variable is not set!");
         model.put("result", result);
-        return "convert";
+        throw new RuntimeException();
     }
 
     @GetMapping("/")
