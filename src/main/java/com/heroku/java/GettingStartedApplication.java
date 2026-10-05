@@ -60,17 +60,15 @@ public class GettingStartedApplication {
         }
     }
 
-    @GetMapping("/h12")
-    String h12() throws InterruptedException {
-        Thread.sleep(35_000);
-        return "Done";
-    }
-
-    public static void main(String[] args) throws InterruptedException {
-        if (args.length > 0 && args[0].equals("--worker")) {
-            new Worker().runWorker();
-            return;
-        }
+//    public static void main(String[] args) throws InterruptedException {
+//        if (args.length > 0 && args[0].equals("--worker")) {
+//            new Worker().runWorker();
+//            return;
+//        }
+//        SpringApplication.run(GettingStartedApplication.class, args);
+//    }
+    public static void main(String[] args) throws Exception {
+        Thread.sleep(120_000);
         SpringApplication.run(GettingStartedApplication.class, args);
     }
 }
