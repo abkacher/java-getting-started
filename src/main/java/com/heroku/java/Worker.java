@@ -4,10 +4,10 @@ public class Worker {
 
     public void runWorker() throws InterruptedException {
 
-        System.out.println("Worker started!");
+        System.out.println("worker started!");
 
         while (true) {
-            System.out.println("Worker is running...");
+            System.out.println("worker is running...");
             Thread.sleep(5000);
         }
     }
