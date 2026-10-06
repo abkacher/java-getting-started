@@ -6,8 +6,8 @@ import javax.measure.unit.SI;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import javax.sql.DataSource;
 import java.sql.Connection;
@@ -16,7 +16,7 @@ import java.util.ArrayList;
 import java.util.Map;
 
 @SpringBootApplication
-@Controller
+@RestController
 public class GettingStartedApplication {
     private final DataSource dataSource;
 
@@ -35,6 +35,11 @@ public class GettingStartedApplication {
                 .orElse("ENERGY environment variable is not set!");
         model.put("Result", result);
         return "Convert";
+    }
+
+    @GetMapping("/hello")
+    String hello() {
+        return "hello!";
     }
 
     @GetMapping("/")
