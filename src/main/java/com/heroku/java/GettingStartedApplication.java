@@ -25,7 +25,7 @@ public class GettingStartedApplication {
         this.dataSource = dataSource;
     }
 
-    @GetMapping("/convert")
+    @GetMapping("/Convert")
     String convert(Map<String, Object> model) {
         RelativisticModel.select();
         final var result = java.util.Optional
@@ -33,8 +33,8 @@ public class GettingStartedApplication {
                 .map(Amount::valueOf)
                 .map(energy -> "E=mc^2: " + energy + " = " + energy.to(SI.KILOGRAM))
                 .orElse("ENERGY environment variable is not set!");
-        model.put("result", result);
-        return "convert";
+        model.put("Result", result);
+        return "Convert";
     }
 
     @GetMapping("/")
