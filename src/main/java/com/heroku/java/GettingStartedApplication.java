@@ -40,7 +40,7 @@ public class GettingStartedApplication {
 
     @GetMapping("/hi")
     String hello(@RequestParam(required = false, defaultValue = "World") String name) {
-        return "hello " + name + "!";
+        return "hello " + name + "!" + "this is for second staging";
     }
 
     @GetMapping("/")
